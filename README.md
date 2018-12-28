@@ -1,1 +1,2 @@
-# vowel-guessing-game
+# A "Find the Vowels" Guessing Game
+
