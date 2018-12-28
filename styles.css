@@ -19,3 +19,39 @@
     border: 1px solid #CCC;
     border-radius: 1em;
 }
+
+#timer {
+    padding: 12px 20px;
+    margin: 0 auto;
+    width: 200px;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    background-color: darkgrey;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3CBC8D;
+    color: white;
+}
+
+input[type=text]:focus {
+    background-color: rgb(95, 184, 238);
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
