@@ -24,6 +24,13 @@ window.addEventListener('load', function () {
         }
     }
 
+    const oneSecond = 1000;
+    let num = 0;
+    setInterval(function() {
+        num++;
+        console.log("time passed: " + num);
+    }, oneSecond);
+
 }, false);
 
 
