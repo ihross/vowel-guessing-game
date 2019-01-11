@@ -12,15 +12,56 @@ window.addEventListener('load', function () {
         "Here is the third quote",
         "Hello there, this is the fourth quote",
         "Fifth quote, checkin in"
-    ]
+    ];
 
     const randomNum = Math.floor(Math.random() * quotesList.length);
+
 
     function loadQuote() {
         quote.innerHTML = quotesList[randomNum];
     }
-
     loadQuote();
+
+    let randomNumList = [];
+
+    for (let i = 0; i < quotesList.length; i++) {
+        newNum = i;
+        randomNumList.push();
+        console.log(randomNumList);
+    }
+
+    // function updateQuote() {
+    //     randomNumList.shuffle();
+    //     for (i = 0; i < quotesList.length; i++) {
+    //         quote.innerHTML = quotesList[i];
+    //     }
+
+
+        // for (i = 0; i < quotesList.length; i++) {
+        //     let newNum = randomNumList.pop(i);
+        //     console.log(newNum);
+        // }
+    // }
+
+    // Array.prototype.shuffle = function () {
+    //     var input = this;
+
+    //     for (var i = input.length - 1; i >= 0; i--) {
+
+    //         var randomIndex = Math.floor(Math.random() * (i + 1));
+    //         var itemAtIndex = input[randomIndex];
+
+    //         input[randomIndex] = input[i];
+    //         input[i] = itemAtIndex;
+    //     }
+    //     return input;
+    // }
+
+
+
+    // var tempArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    // tempArray.shuffle();
+    // console.log(tempArray);
 
     title.addEventListener("click", () => {
         console.log("Title clicked");
@@ -28,8 +69,11 @@ window.addEventListener('load', function () {
 
     submitButton.addEventListener("click", () => {
         stopTimer();
+        // updateQuote();
         console.log("Stopped the timer");
     });
+
+
  
 
 
