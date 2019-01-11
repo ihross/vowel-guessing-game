@@ -1,18 +1,41 @@
 window.addEventListener('load', function () {
-    const title = document.getElementById("title");
-        title.addEventListener("click", () => {
-            console.log("Title clicked")
-        });
 
+    const title = document.getElementById("title");
+    const submitButton = document.getElementById("submit");
     const minutesLabel = document.getElementById("minutes");
     const secondsLabel = document.getElementById("seconds");
+    const quote = document.getElementById("quote");
+
+    title.addEventListener("click", () => {
+        console.log("Title clicked");
+    });
+
+    submitButton.addEventListener("click", () => {
+        stopTimer();
+        console.log("Stopped the timer");
+    });
+ 
+    function updateQuote() {
+        quote.innerHTML = "This is a test";
+    }
+
+    updateQuote();
+
+    const oneSecond = 1000;
     let totalSeconds = 0;
-    setInterval(setTime, 1000);
+
+
+    let interval = setInterval(setTime, oneSecond);
 
     function setTime() {
         totalSeconds++;
         secondsLabel.innerHTML = pad(totalSeconds % 60);
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        console.log("Seconds passed since loading: " + totalSeconds);
+    }
+
+    function stopTimer() {
+        clearInterval(interval);
     }
 
     function pad(val) {
@@ -23,13 +46,6 @@ window.addEventListener('load', function () {
             return valString;
         }
     }
-
-    const oneSecond = 1000;
-    let num = 0;
-    setInterval(function() {
-        num++;
-        console.log("time passed: " + num);
-    }, oneSecond);
 
 }, false);
 
