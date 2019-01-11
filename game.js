@@ -6,6 +6,22 @@ window.addEventListener('load', function () {
     const secondsLabel = document.getElementById("seconds");
     const quote = document.getElementById("quote");
 
+    const quotesList = [
+        "This is the initial test",
+        "Now here is the second quote",
+        "Here is the third quote",
+        "Hello there, this is the fourth quote",
+        "Fifth quote, checkin in"
+    ]
+
+    const randomNum = Math.floor(Math.random() * quotesList.length);
+
+    function loadQuote() {
+        quote.innerHTML = quotesList[randomNum];
+    }
+
+    loadQuote();
+
     title.addEventListener("click", () => {
         console.log("Title clicked");
     });
@@ -15,11 +31,7 @@ window.addEventListener('load', function () {
         console.log("Stopped the timer");
     });
  
-    function updateQuote() {
-        quote.innerHTML = "This is a test";
-    }
 
-    updateQuote();
 
     const oneSecond = 1000;
     let totalSeconds = 0;
