@@ -38,11 +38,10 @@ window.addEventListener('load', function () {
 
     submitButton.addEventListener("click", () => {
         stopTimer();
-        // updateQuote();
         console.log("Stopped the timer");
     });
 
-    
+
     const oneSecond = 1000;
     let totalSeconds = 0;
 
