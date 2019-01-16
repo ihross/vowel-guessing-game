@@ -1,11 +1,13 @@
 window.addEventListener('load', function () {
 
+    // Grabbing elements from the DOM
     const title = document.getElementById("title");
     const submitButton = document.getElementById("submit");
     const minutesLabel = document.getElementById("minutes");
     const secondsLabel = document.getElementById("seconds");
     const quote = document.getElementById("quote");
 
+    // Array of displayable quotes
     const quotesList = [
         "This is the initial test",
         "Now here is the second quote",
@@ -16,7 +18,7 @@ window.addEventListener('load', function () {
 
     const randomNum = Math.floor(Math.random() * quotesList.length);
 
-
+    // Puts a random quote on the page at load
     function loadQuote() {
         quote.innerHTML = quotesList[randomNum];
     }
@@ -30,12 +32,12 @@ window.addEventListener('load', function () {
         console.log(randomNumList);
     }
 
- 
-
+    // Testing Event Listener on the DOM
     title.addEventListener("click", () => {
         console.log("Title clicked");
     });
 
+    // Submit button currently only stops the timer, and does not submit anything
     submitButton.addEventListener("click", () => {
         stopTimer();
         console.log("Stopped the timer");
