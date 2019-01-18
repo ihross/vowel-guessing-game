@@ -48,7 +48,7 @@ window.addEventListener('load', function () {
     let totalSeconds = 0;
 
 
-    let interval = setInterval(setTime, oneSecond);
+    const interval = setInterval(setTime, oneSecond);
 
     function setTime() {
         totalSeconds++;
