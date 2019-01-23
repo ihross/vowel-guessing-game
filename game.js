@@ -83,6 +83,3 @@ window.addEventListener('load', function () {
 // //     console.log("You've clicked the title!");
 // // });
 
-
-// console.log("JavaScript activated");
-
