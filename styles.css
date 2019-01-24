@@ -10,6 +10,7 @@
     letter-spacing: 3px;
 }
 
+/* Establishing the guess info  */
 #guess {
     /* Just to center the form on the page */
     margin: 0 auto;
@@ -20,6 +21,7 @@
     border-radius: 1em;
 }
 
+/* The timer's setup to be halfway presentable */
 #timer {
     padding: 12px 20px;
     margin: 0 auto;
@@ -40,6 +42,7 @@ input[type=text] {
     color: white;
 }
 
+/* TODO: Can't forget to make focus on this button be automatic as the DOM loads */
 input[type=text]:focus {
     background-color: rgb(95, 184, 238);
 }
