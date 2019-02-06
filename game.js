@@ -24,6 +24,7 @@ window.addEventListener('load', function () {
     }
     loadQuote();
 
+    // Establishing array to fill with the appropriate amount of random numbers
     let randomNumList = [];
 
     for (let i = 0; i < quotesList.length; i++) {
@@ -43,10 +44,8 @@ window.addEventListener('load', function () {
         console.log("Stopped the timer");
     });
 
-
     const oneSecond = 1000;
     let totalSeconds = 0;
-
 
     const interval = setInterval(setTime, oneSecond);
 
