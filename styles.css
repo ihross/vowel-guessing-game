@@ -30,6 +30,7 @@
     background-color: darkgrey;
 }
 
+/* Input content currently copied and pasted */
 input[type=text] {
     width: 50%;
     padding: 12px 20px;
