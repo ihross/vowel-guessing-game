@@ -27,6 +27,7 @@ window.addEventListener('load', function () {
     // Establishing array to fill with the appropriate amount of random numbers
     let randomNumList = [];
 
+    // TODO: newNum variable to be addressed
     for (let i = 0; i < quotesList.length; i++) {
         newNum = i;
         randomNumList.push();
