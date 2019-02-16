@@ -38,7 +38,7 @@ input[type=text] {
     box-sizing: border-box;
     border: none;
     background-color: #3CBC8D;
-    color: gray;
+    color: whitesmoke;
 }
 
 /* TODO: Can't forget to make focus on this button be automatic as the DOM loads */
