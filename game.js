@@ -45,9 +45,9 @@ window.addEventListener('load', function () {
         console.log("Stopped the timer");
     });
 
+    // Declared variables to be refactored in code
     const oneSecond = 1000;
     let totalSeconds = 0;
-
     const interval = setInterval(setTime, oneSecond);
 
     function setTime() {
@@ -57,6 +57,7 @@ window.addEventListener('load', function () {
         console.log("Seconds passed since loading: " + totalSeconds);
     }
 
+    // Simple function to stop the timer
     function stopTimer() {
         clearInterval(interval);
     }
