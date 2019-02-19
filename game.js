@@ -77,10 +77,3 @@ window.addEventListener('load', function () {
 
 // document.getElementsByClassName('title');
 // document.getElementsByClassName('content');
-
-
-
-// // title.addEventListener('click', function () {
-// //     console.log("You've clicked the title!");
-// // });
-
