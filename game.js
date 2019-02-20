@@ -73,7 +73,3 @@ window.addEventListener('load', function () {
 
 }, false);
 
-
-
-// document.getElementsByClassName('title');
-// document.getElementsByClassName('content');
