@@ -16,6 +16,7 @@ window.addEventListener('load', function () {
         "Fifth quote, checkin in"
     ];
 
+    // Simple random number generator appropriate for the quotes array
     const randomNum = Math.floor(Math.random() * quotesList.length);
 
     // Puts a random quote on the page at load
