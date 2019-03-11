@@ -55,7 +55,7 @@ window.addEventListener('load', function () {
         totalSeconds++;
         secondsLabel.innerHTML = pad(totalSeconds % 60);
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-        console.log("Seconds passed since loading: " + totalSeconds);
+        // console.log("Seconds passed since loading: " + totalSeconds);
     }
 
     // Simple function to stop the timer
