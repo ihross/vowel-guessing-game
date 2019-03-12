@@ -17,6 +17,4 @@
     // Have a separate incremented counter for each of a and m's elements
 
     // Add up the counter variables to return the integer result
-
-
 // }
