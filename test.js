@@ -4,7 +4,6 @@
 //         let aLength = a.map(function (num) {
 //             aNums.length;
 //         });
-//         console.log(aLength);
 //     }
 
 
